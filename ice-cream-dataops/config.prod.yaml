@@ -11,11 +11,13 @@ variables:
   modules:
     bootcamp:
       # Variables shared by modules
-      data_developer_source_id: ${DATA_DEVELOPER_SOURCE_ID}
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
+      data_foundation:
+        data_developer_source_id: ${DATA_DEVELOPER_SOURCE_ID}
+
       ice_cream_api:
-        icapi_extractors_source_id: ee7a45aa-0cc5-4e28-ad31-85f6ad0358f0
+        icapi_extractors_source_id: ${ICAPI_EXTRACTORS_SOURCE_ID}
         tokenUri: ${IDP_TOKEN_URL}
         cdfProjectName: ${CDF_PROJECT}
         scopes: ${IDP_SCOPES}
@@ -26,7 +28,7 @@ variables:
 
       use_cases:
         oee:
-          data_pipeline_oee_source_id: 24e641dd-0002-4f8d-b6e7-e58033dd4899
+          data_pipeline_oee_source_id: ${DATA_PIPELINE_OEE_SOURCE_ID}
           uc_oee_ds_external_id: ds_uc_oee
           oee_space_name: oee_ts_space
           data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID}
